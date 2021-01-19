@@ -1,11 +1,13 @@
 ---
 name: design issue
-about: Describe this issue template's purpose here.
+about: Solve a design issue
 title: ''
 labels: ''
 assignees: ''
 
 ---
+
+What's wrong with the design?
 
 What are you trying to change?
 
