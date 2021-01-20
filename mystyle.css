@@ -1,25 +1,33 @@
 /* class selector */
 .center {
   text-align: center;
-  color: red;
+  color: rgb(255, 0, 0);
+  border-style: solid;
+  border-color: blue;
+  border-width: medium;
+  border-radius: 25px;
 }
 
 /* id selector */
 #para1 {
   text-align: center;
-  color: red;
+  color: rgba(255, 0, 0, 0.75);
+  border-style: solid;
+  border-radius: 25px;
 }
 
 /* universal selector */
 * {
   text-align: center;
   color: blue;
+  border-style: solid;
+  border-radius: 25px;
 }
 
 /* element selector */
 p {
   text-align: center;
-  color: red;
+  color: hsl(9, 100%, 64%);
 }
 
 /* attribute selector */
@@ -37,12 +45,16 @@ a:hover {
 /* selector list */
 h3, h4 {
   text-align: center;
-  color: red;
+  color: hsla(9, 100%, 64%, 0.75);
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
 
 /* descendant combinator */
 div p {
-  background-color: yellow;
+  background-color: #fff;
 }
 
 /* child combinator */
@@ -59,3 +71,5 @@ div ~ p {
 div + p {
   background-color: yellow;
 }
+
+
