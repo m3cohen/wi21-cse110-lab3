@@ -1,5 +1,5 @@
-/* element selector */
-p {
+/* class selector */
+.center {
   text-align: center;
   color: red;
 }
@@ -10,27 +10,16 @@ p {
   color: red;
 }
 
-/* class selector */
-.center {
-  text-align: center;
-  color: red;
-}
-
 /* universal selector */
 * {
   text-align: center;
   color: blue;
 }
 
-/* group selector */
-h3, h4 {
+/* element selector */
+p {
   text-align: center;
   color: red;
-}
-
-/* psuedo-class selector */
-a:hover {
-  color: #FF00FF;
 }
 
 /* attribute selector */
@@ -38,4 +27,35 @@ a:hover {
   background: yellow;
 }
 
+/* psuedo-class selector */
+a:hover {
+  color: #FF00FF;
+}
 
+/* GROUPING/COMBINATORS */
+
+/* selector list */
+h3, h4 {
+  text-align: center;
+  color: red;
+}
+
+/* descendant combinator */
+div p {
+  background-color: yellow;
+}
+
+/* child combinator */
+div > p {
+  background-color: yellow;
+}
+
+/* general sibling combinator */
+div ~ p {
+  background-color: yellow;
+}
+
+/* adjacent sibling combinator */
+div + p {
+  background-color: yellow;
+}
