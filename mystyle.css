@@ -1,8 +1,41 @@
-body {
-  background-color: lightblue;
+/* element selector */
+p {
+  text-align: center;
+  color: red;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+/* id selector */
+#para1 {
+  text-align: center;
+  color: red;
 }
+
+/* class selector */
+.center {
+  text-align: center;
+  color: red;
+}
+
+/* universal selector */
+* {
+  text-align: center;
+  color: blue;
+}
+
+/* group selector */
+h3, h4 {
+  text-align: center;
+  color: red;
+}
+
+/* psuedo-class selector */
+a:hover {
+  color: #FF00FF;
+}
+
+/* attribute selector */
+[class^="top"] {
+  background: yellow;
+}
+
+
