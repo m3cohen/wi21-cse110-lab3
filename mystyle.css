@@ -1,0 +1,143 @@
+/* class selector */
+.center {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  border-style: solid;
+  border-color: blue;
+  border-width: medium;
+  border-radius: 25px;
+  display: inline;
+}
+
+/* id selector */
+#para1 {
+  text-align: center;
+  color: rgba(255, 0, 0, 0.75);
+  border-style: solid;
+  border-radius: 25px;
+  margin: auto;
+  padding: 25px 50px 75px 100px;
+}
+
+/* universal selector */
+* {
+  text-align: center;
+  color: blue;
+  border-style: solid;
+  border-radius: 25px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  height: auto;
+  width: auto;
+  min-width: 40px;
+  display: none;
+}
+
+/* element selector */
+p {
+  text-align: center;
+  color: hsl(9, 100%, 64%);
+}
+
+/* attribute selector */
+[class^="top"] {
+  background: yellow;
+}
+
+/* psuedo-class selector */
+a:hover {
+  color: #FF00FF;
+}
+
+a:active {
+  color: #0000FF;
+}
+
+/* GROUPING/COMBINATORS */
+
+/* selector list */
+h3, h4 {
+  text-align: center;
+  color: hsla(9, 100%, 64%, 0.75);
+  width: 300px;
+  max-width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  margin: 25px 50px 75px 100px;
+  text-decoration: underline;
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* descendant combinator */
+div p {
+  background-color: #fff;
+}
+
+/* child combinator */
+div > p {
+  background-color: yellow;
+}
+
+/* general sibling combinator */
+div ~ p {
+  background-color: yellow;
+}
+
+/* adjacent sibling combinator */
+div + p {
+  background-color: yellow;
+}
+
+/* margins */
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  position: relative;
+}
+
+/* position */
+h1 {
+  position: relative;
+}
+
+/* flexbox */
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
