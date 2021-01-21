@@ -5,40 +5,30 @@
   border-style: solid;
   border-color: blue;
   border-width: medium;
-  border-radius: 25px;
+  border-radius: 5px;
   display: inline;
 }
 
 /* id selector */
-#para1 {
+#header {
   text-align: center;
   color: rgba(255, 0, 0, 0.75);
   border-style: solid;
-  border-radius: 25px;
+  border-radius: 5px;
   margin: auto;
   padding: 25px 50px 75px 100px;
 }
 
 /* universal selector */
 * {
-  text-align: center;
-  color: blue;
-  border-style: solid;
-  border-radius: 25px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
   height: auto;
   width: auto;
-  min-width: 40px;
-  display: none;
 }
 
 /* element selector */
 p {
-  text-align: center;
-  color: hsl(9, 100%, 64%);
+  text-align: left;
+  color: hsl(0, 100%, 1%);
 }
 
 /* attribute selector */
@@ -63,49 +53,55 @@ h3, h4 {
   color: hsla(9, 100%, 64%, 0.75);
   width: 300px;
   max-width: 300px;
-  border: 15px solid green;
+  border: 5px solid green;
   padding: 50px;
-  margin: 20px;
-  margin: 25px 50px 75px 100px;
+  margin: 5px;
   text-decoration: underline;
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   font-family: 'Open Sans', sans-serif;
 
-  
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  min-width: 40px;
+  display: block;
+}
+
 /* descendant combinator */
-div p {
+section p {
   background-color: #fff;
 }
 
 /* child combinator */
-div > p {
-  background-color: yellow;
+section > p {
+  background-color: lavender;
 }
 
 /* general sibling combinator */
-div ~ p {
-  background-color: yellow;
+section ~ p {
+  background-color: lavender;
 }
 
 /* adjacent sibling combinator */
-div + p {
-  background-color: yellow;
+section + p {
+  background-color: lavender;
 }
 
 /* margins */
 p {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
   position: relative;
 }
 
 /* position */
 h1 {
-  position: relative;
+  position: static;
 }
 
 /* flexbox */
@@ -126,18 +122,14 @@ h1 {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #2196F3;
-  padding: 10px;
+  padding: 5px;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 5px;
   font-size: 30px;
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
