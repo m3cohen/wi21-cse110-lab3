@@ -51,6 +51,10 @@ a:hover {
   color: #FF00FF;
 }
 
+a:active {
+  color: #0000FF;
+}
+
 /* GROUPING/COMBINATORS */
 
 /* selector list */
@@ -96,6 +100,11 @@ p {
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
- 
+  position: relative;
+}
+
+/* position */
+h1 {
+  position: relative;
 }
 
