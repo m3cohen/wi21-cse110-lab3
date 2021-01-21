@@ -21,14 +21,15 @@
 
 /* universal selector */
 * {
-  height: auto;
-  width: auto;
+  text-align: left;
 }
 
 /* element selector */
 p {
   text-align: left;
   color: hsl(0, 100%, 1%);
+  height: auto;
+  width: auto;
 }
 
 /* attribute selector */
